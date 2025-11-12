@@ -1,12 +1,17 @@
+import { FileText } from "lucide-react";
+
 const ComplianceFooter = () => {
   return (
     <footer className="bg-muted/30 py-8 px-6">
       <div className="max-w-6xl mx-auto">
         
         <div className="bg-card rounded-lg p-6 shadow-md mb-6">
-          <h3 className="text-lg font-bold text-foreground mb-3">
-            📋 Important Disclosures
-          </h3>
+          <div className="flex items-center gap-3 mb-3">
+            <FileText className="w-6 h-6 text-primary" />
+            <h3 className="text-lg font-bold text-foreground">
+              Important Disclosures
+            </h3>
+          </div>
           <div className="text-sm text-card-foreground/80 space-y-2 leading-relaxed">
             <p>
               <strong>Affiliate Relationship:</strong> Mesa Group Consulting has a marketing partnership with PolicyGenius and may receive compensation if you purchase life insurance through the links on this page. This does not affect the price you pay—you get the same rate whether you go through us or directly to PolicyGenius.

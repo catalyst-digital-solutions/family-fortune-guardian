@@ -1,3 +1,5 @@
+import { Clock } from "lucide-react";
+
 const HowItWorksSection = () => {
   const steps = [
     {
@@ -63,10 +65,13 @@ const HowItWorksSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 bg-[hsl(var(--mesa-cream))] rounded-lg p-6 text-center">
-          <p className="text-lg text-foreground font-semibold mb-2">
-            ⏱️ How long does it take to get covered?
-          </p>
+        <div className="mt-12 bg-[hsl(var(--mesa-cream))] rounded-lg p-6">
+          <div className="flex items-center gap-3 mb-2">
+            <Clock className="w-6 h-6 text-primary" />
+            <p className="text-lg text-foreground font-semibold">
+              How long does it take to get covered?
+            </p>
+          </div>
           <p className="text-foreground/80">
             After you sign your application and complete the medical exam, the underwriting process can take anywhere from <strong>4-6 weeks</strong>. (If you apply for an accelerated underwriting policy, you may receive a decision in as little as <strong>24 hours</strong>.)
           </p>

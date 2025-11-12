@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import familyHero from "@/assets/family-hero.jpg";
 
 const HeroSection = () => {
@@ -48,9 +49,22 @@ const HeroSection = () => {
               </button>
             </div>
 
-            <p className="text-sm text-muted-foreground mt-4">
-              ✓ No-obligation quotes in minutes &nbsp; | &nbsp; ✓ Compare 30+ top-rated carriers &nbsp; | &nbsp; ✓ Expert guidance included
-            </p>
+            <div className="flex flex-wrap items-center gap-4 mt-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-1">
+                <Check className="w-4 h-4 text-primary" />
+                <span>No-obligation quotes in minutes</span>
+              </div>
+              <span className="hidden sm:inline">|</span>
+              <div className="flex items-center gap-1">
+                <Check className="w-4 h-4 text-primary" />
+                <span>Compare 30+ top-rated carriers</span>
+              </div>
+              <span className="hidden sm:inline">|</span>
+              <div className="flex items-center gap-1">
+                <Check className="w-4 h-4 text-primary" />
+                <span>Expert guidance included</span>
+              </div>
+            </div>
           </div>
           
         </div>

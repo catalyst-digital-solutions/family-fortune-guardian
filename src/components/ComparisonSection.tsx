@@ -1,3 +1,5 @@
+import { Lightbulb, X, Check } from "lucide-react";
+
 const ComparisonSection = () => {
   return (
     <section className="py-16 px-6 bg-background">
@@ -37,8 +39,16 @@ const ComparisonSection = () => {
 
               <tr className="hover:bg-muted/50">
                 <td className="px-6 py-4 font-semibold text-foreground">Cash Value</td>
-                <td className="px-6 py-4 text-center text-foreground/80">❌ None</td>
-                <td className="px-6 py-4 text-center text-foreground/80">✅ Builds over time (can borrow against it)</td>
+                <td className="px-6 py-4 text-center">
+                  <div className="flex items-center justify-center gap-2 text-foreground/80">
+                    <X className="w-5 h-5 text-destructive" /> None
+                  </div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <div className="flex items-center justify-center gap-2 text-foreground/80">
+                    <Check className="w-5 h-5 text-green-600" /> Builds over time (can borrow against it)
+                  </div>
+                </td>
               </tr>
 
               <tr className="hover:bg-muted/50">
@@ -64,9 +74,12 @@ const ComparisonSection = () => {
         </div>
 
         <div className="mt-8 bg-[hsl(var(--mesa-tan))] rounded-lg p-6">
-          <p className="text-lg text-foreground leading-relaxed">
-            <strong>💡 Expert Tip:</strong> Most people start with term life insurance because it's affordable and covers the years when your family depends on your income most (raising kids, paying off the mortgage, etc.). You can always convert to permanent coverage later if your financial goals change.
-          </p>
+          <div className="flex items-start gap-3">
+            <Lightbulb className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+            <p className="text-lg text-foreground leading-relaxed">
+              <strong>Expert Tip:</strong> Most people start with term life insurance because it's affordable and covers the years when your family depends on your income most (raising kids, paying off the mortgage, etc.). You can always convert to permanent coverage later if your financial goals change.
+            </p>
+          </div>
         </div>
 
         <div className="text-center mt-12">

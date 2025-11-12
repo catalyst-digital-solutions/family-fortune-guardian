@@ -1,32 +1,34 @@
+import { Home, GraduationCap, Briefcase, Landmark, TrendingUp, Gift } from "lucide-react";
+
 const WhyYouNeedSection = () => {
   const benefits = [
     {
-      emoji: "🏠",
+      Icon: Home,
       title: "Protect Your Family's Home",
       description: "If something happens to you, your family can pay off the mortgage and stay in the home they love. No forced moves, no financial panic."
     },
     {
-      emoji: "🎓",
+      Icon: GraduationCap,
       title: "Fund Your Kids' Education",
       description: "Ensure your children can still afford college, trade school, or vocational training—even if you're not there to provide it."
     },
     {
-      emoji: "💼",
+      Icon: Briefcase,
       title: "Replace Lost Income",
       description: "Your family won't have to worry about losing their lifestyle, paying bills, or scrambling to make ends meet during a difficult time."
     },
     {
-      emoji: "🏦",
+      Icon: Landmark,
       title: "Cover Final Expenses",
       description: "Funeral costs, medical bills, and outstanding debts can total $10,000-$50,000+. Life insurance ensures your family isn't burdened."
     },
     {
-      emoji: "📈",
+      Icon: TrendingUp,
       title: "Build Cash Value (Permanent Policies)",
       description: "Whole life and universal life policies accumulate cash value you can borrow against for emergencies, retirement, or opportunities."
     },
     {
-      emoji: "🎁",
+      Icon: Gift,
       title: "Leave a Legacy",
       description: "Pass wealth to your heirs, fund charitable causes, or ensure your family has a financial cushion for generations."
     }
@@ -51,7 +53,7 @@ const WhyYouNeedSection = () => {
               key={index}
               className="bg-gradient-to-br from-[hsl(var(--mesa-cream))] to-[hsl(var(--mesa-tan))] rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="text-5xl mb-4">{benefit.emoji}</div>
+              <benefit.Icon className="w-12 h-12 mb-4 text-primary" />
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 {benefit.title}
               </h3>

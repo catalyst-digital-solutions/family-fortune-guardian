@@ -1,7 +1,9 @@
+import { Users, Briefcase, Home, Rocket, BarChart3 } from "lucide-react";
+
 const CoverageCalculatorSection = () => {
   const scenarios = [
     {
-      emoji: "👨‍👩‍👧‍👦",
+      Icon: Users,
       title: "Young Family with Kids",
       details: [
         { label: "Annual Income", value: "$75,000" },
@@ -12,7 +14,7 @@ const CoverageCalculatorSection = () => {
       recommendation: "$750,000 - $1,000,000"
     },
     {
-      emoji: "💼",
+      Icon: Briefcase,
       title: "Single Professional with No Dependents",
       details: [
         { label: "Annual Income", value: "$60,000" },
@@ -23,7 +25,7 @@ const CoverageCalculatorSection = () => {
       recommendation: "$100,000 - $250,000"
     },
     {
-      emoji: "🏡",
+      Icon: Home,
       title: "Homeowners Nearing Retirement",
       details: [
         { label: "Annual Income", value: "$100,000" },
@@ -34,7 +36,7 @@ const CoverageCalculatorSection = () => {
       recommendation: "$300,000 - $500,000"
     },
     {
-      emoji: "🚀",
+      Icon: Rocket,
       title: "High Earner with Complex Estate",
       details: [
         { label: "Annual Income", value: "$250,000+" },
@@ -62,7 +64,7 @@ const CoverageCalculatorSection = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {scenarios.map((scenario, index) => (
             <div key={index} className="bg-card rounded-lg p-8 shadow-lg">
-              <div className="text-4xl mb-4">{scenario.emoji}</div>
+              <scenario.Icon className="w-10 h-10 mb-4 text-primary" />
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 {scenario.title}
               </h3>
@@ -82,9 +84,12 @@ const CoverageCalculatorSection = () => {
         </div>
 
         <div className="bg-card rounded-lg p-8 shadow-lg">
-          <h3 className="text-2xl font-bold text-foreground mb-4 text-center">
-            📊 Quick Coverage Calculator
-          </h3>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <BarChart3 className="w-8 h-8 text-primary" />
+            <h3 className="text-2xl font-bold text-foreground">
+              Quick Coverage Calculator
+            </h3>
+          </div>
           <div className="space-y-4 max-w-2xl mx-auto">
             <p className="text-lg text-card-foreground/80">
               <strong>Step 1:</strong> Multiply your annual income by 10-12

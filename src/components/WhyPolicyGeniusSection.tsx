@@ -1,32 +1,34 @@
+import { Trophy, DollarSign, Target, Clock, Lock, Phone } from "lucide-react";
+
 const WhyPolicyGeniusSection = () => {
   const benefits = [
     {
-      emoji: "🏆",
+      Icon: Trophy,
       title: "Compare 30+ Top-Rated Carriers",
       description: "PolicyGenius shops your application to dozens of A-rated insurance companies to find you the best rate. You don't have to call multiple agents or fill out endless forms."
     },
     {
-      emoji: "💰",
+      Icon: DollarSign,
       title: "No Extra Fees or Markups",
       description: "PolicyGenius doesn't charge you anything. They're paid by the insurance companies, so you get the same price you'd pay going directly to the insurer—but with expert guidance."
     },
     {
-      emoji: "🎯",
+      Icon: Target,
       title: "Licensed Experts Guide You",
       description: "No pushy sales tactics. PolicyGenius agents are licensed professionals who explain your options, answer questions, and help you choose the right coverage for your family."
     },
     {
-      emoji: "⏱️",
+      Icon: Clock,
       title: "Get Quotes in Minutes",
       description: "Fill out one quick application online and get instant quotes from multiple carriers. No waiting days for callback or sitting through lengthy sales pitches."
     },
     {
-      emoji: "🔒",
+      Icon: Lock,
       title: "Your Info Is Secure",
       description: "PolicyGenius uses bank-level encryption to protect your personal and medical information. They're also BBB accredited with an A+ rating."
     },
     {
-      emoji: "📞",
+      Icon: Phone,
       title: "Support Throughout the Process",
       description: "Your dedicated case manager stays with you from quote to approval, coordinating medical exams, answering insurer questions, and keeping you updated every step of the way."
     }
@@ -48,7 +50,7 @@ const WhyPolicyGeniusSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex items-start gap-4">
-              <div className="flex-shrink-0 text-4xl">{benefit.emoji}</div>
+              <benefit.Icon className="flex-shrink-0 w-10 h-10 text-primary" />
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">
                   {benefit.title}
