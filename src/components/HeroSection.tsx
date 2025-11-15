@@ -3,7 +3,7 @@ import familyHero from "@/assets/family-hero.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-[hsl(var(--mesa-cream))] to-background py-16 px-6">
+    <section className="bg-gradient-to-br from-white via-amber-50 to-white py-12 md:py-20 lg:py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
